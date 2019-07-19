@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <meta name="description" content="Main page to my CS 2350 portfolio">
+  <meta name="keywords" content="portfolio, Icarus, meal planning, recipes">
+  <meta name="author" content="Wendalyn Tran">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="resources/favicon-32x32.png">
+  <link rel="stylesheet" type='text/css' href="resources/style2.css">
+</head>
+
+<body>
+  <div class="row">
+    <header>
+      <img src="resources/beet_opt.png" alt="Single beet" width="100"
+        height="140">
+      <p>Wendy's Portfolio</p>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="icarus.html">Publish to Icarus</a></li>
+        <li>
+          <div class="dropdown">
+            <button>More &#x25BC;</button>
+            <div class="dropdown-content">
+              <a class="dropdown-buttons" href="cssconcepts.html">CSS
+                Concepts</a>
+              <a class="dropdown-buttons" href="meals.html">Meal Planning</a>
+              <a class="dropdown-buttons" href="madlibs.html">Mad Libs</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="row">
+    <main class="col-9 col-m-12">
+      <h1>Wendy's Portfolio</h1>
+      <section>
+        <a href="icarus.html" title="Publish to Icarus page">
+          <h2>Publish to Icarus</h2>
+          <img src="resources/cyberduck_icon_opt.png"
+            alt="Image of Cyberduck Icon" width="100" height="100">
+          <p> Interested in learning how to publish your webpages to Icarus?
+            This articles contains a step-by-step process on how to log into
+            Icarus, publish your webpages, and create your URL links.</p>
+        </a>
+      </section>
+      <section>
+        <a href="cssconcepts.html" title="CSS Concepts page">
+          <h2>CSS Concepts</h2>
+          <img src="resources/boxmodel_opt.png" alt="Image of box model"
+            width="200" height="110">
+          <p>This article details various CSS concepts such as the CSS box
+            model, how to change the style when a user hovers over an element,
+            color contrasts, different image positions and various magnitudes of
+            drop shadows.</p>
+        </a>
+      </section>
+      <section>
+        <a href="meals.html" title="Meal planning page">
+          <h2>Meal Planning</h2>
+          <img src="resources/ingredients_opt.jpg"
+            alt="Various veggies spread across a table" width="225"
+            height="100">
+          <p>This article contains a recipe for vegetarian enchiladas and a
+            weekly meal plan. </p>
+        </a>
+      </section>
+      <section>
+        <a href="madlibs.html" title="Mad libs page">
+          <h2>Mad Libs</h2>
+          <img src="resources/madlibs_opt.png" alt="Image of box model"
+            width="105" height="100">
+          <p>This web page will have an interactive mad libs story. Fill in the
+            blanks and have fun reading your story. </p>
+        </a>
+      </section>
+    </main>
+    <aside class="col-3 col-m-12">
+      <section>
+        <div class="col-12 col-m-12">
+          <h2>About Me</h2>
+          <img src="resources/me.jpg" alt="Profile picture of author"
+            width="100" height="130">
+          <p>Hello! My name is Wendy, and I like to cook and code. <a
+              href="aboutme.html" target="_blank"
+              title="Link to About Me page">About Me &rarr;</a></p>
+          <h2 class="resource_space">Resources</h2>
+        </div>
+        <div class="col-12 col-m-4 vertical_line">
+          <a href="https://towardsdatascience.com/" target="_blank" title="Link to
+        Data Science Blog">Towards Data Science<br>
+            <img src="resources/towardsdatascience.png"
+              alt="Towards Data Science logo" width="100" height="100"></a>
+          <p>Learn about data science through various articles on this blog.</p>
+          <hr>
+        </div>
+        <div class="col-12 col-m-4 vertical_line">
+          <a href="https://informationisbeautiful.net/" target="_blank" title="Link to
+          Data Viz Blog">Information is Beautiful<br>
+            <img src="resources/infoisbeautiful_opt.png"
+              alt="Information is Beautiful logo" width="100" height="100"></a>
+          <p>See and learn from a variety of data visualizations. </p>
+          <hr>
+        </div>
+        <div class="col-12 col-m-4">
+          <a href="https://www.kaggle.com/" target="_blank" title="Link to
+            Kaggle website">Kaggle<br>
+            <img src="resources/kaggle_opt.png"
+              alt="Creating graphs & making calculations on computer graphic"
+              width="140" height="100"></a>
+          <p>Improve your data science skills by entering competitions.</p>
+          <hr>
+        </div>
+      </section>
+    </aside>
+  </div>
+  <footer class="row">
+    <div class="col-5">
+      <h3>Leave a Comment</h3>
+      <form> Name: <input type="text" name="user_name"><br> Email: <input
+          type="text" name="user_email"><br>Comments:<br> <textarea rows="5"
+          cols="50" name="comment"></textarea><br>
+        <button type="submit">Submit Comment</button></form>
+    </div>
+    <div class="col-5 center">
+      <h3>Receive Notifications</h3>
+      <input class="center" size="23" type="text"
+        placeholder="Sign up for Email Updates">
+      <button type="submit">Sign Up</button>
+    </div>
+    <div class="col-2 center">
+      <h3>Follow Me</h3>
+      <a href="https://www.linkedin.com/in/wendalyntran" target="_blank"
+        title="Author's LinkedIn profile"><img class="linkedin"
+          src="resources/linkedin_logo.png" alt="LinkedIn Logo" width="35"
+          height="35"></a>
+      <a href="https://github.com/twendy00/School" target="_blank"
+        title="Author's GitHub account">
+        <img class="github" src="resources/github_logo_opt.png"
+          alt="Github Logo" width="35" height="35"></a>
+    </div>
+  </footer>
+</body>
+
+</html>

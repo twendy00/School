@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Concepts</title>
+  <meta name="description" content="Information on various CSS concepts">
+  <meta name="keywords"
+    content="CSS, box model, hover, color contrast, position, shadow">
+  <meta name="author" content="Wendalyn Tran">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="resources/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="resources/style2.css">
+  <link rel="stylesheet" type="text/css" href="resources/style.css">
+</head>
+
+<body>
+  <div class="row">
+    <header>
+      <img src="resources/beet_opt.png" alt="Single beet" width="100"
+        height="140">
+      <p>Wendy's Portfolio</p>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="icarus.html">Publish to Icarus</a></li>
+        <li>
+          <div class="dropdown">
+            <button>More &#x25BC;</button>
+            <div class="dropdown-content">
+              <a class="dropdown-buttons" href="cssconcepts.html">CSS
+                Concepts</a>
+              <a class="dropdown-buttons" href="meals.html">Meal Planning</a>
+              <a class="dropdown-buttons" href="madlibs.html">Mad Libs</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="row">
+    <main>
+      <h1>CSS Concepts</h1>
+      <h2>CSS Box Model</h2>
+      <h3>The CSS Box Model Explained</h3>
+      <p>All HTML elements can essentially be viewed as boxes, which is the box
+        model. The box model allows us to size, space, position, and add any
+        properties (ex. color, background, etc.) to HTML elements. These boxes
+        consist of a margin, border, padding, and content.</p>
+      <img src="resources/boxmodel_opt.png" alt="Image of box model" width="300"
+        height="200">
+      <ul>
+        <li>Margin: the space around the border. It can create distance between
+          elements on the page. </li>
+        <li>Border: the area or line that exists between the padding and margin.
+        </li>
+        <li>Padding: the space between the content and border.</li>
+        <li>Content: the content of the element such as text, an image, video,
+          etc. </li>
+      </ul>
+      <h3>The Padding Property</h3>
+      <div class="padding1">
+        <p>As stated above, the padding determines how much space is between the
+          content and the border. The top, right, bottom and left spaces can be
+          determined individually. In this box, the padding has been set to 30px
+          all around, so the space around the content is equidistant on all
+          sides. </p>
+      </div>
+      <div class="padding2">
+        <p>The padding in this box has been set to 50px on the top and bottom
+          and 125px on the left and right. You should be able to see how the top
+          and bottom spaces between the content and border are more narrow than
+          the left and right spaces.</p>
+      </div>
+      <div class="padding3">
+        <p>In this box, the padding on each side has been set to a different
+          size. The top is at 150px, the right is at 120px, the bottom is at
+          75px and the left is at 50px.You should be able to see how the space
+          between the content and border are all different sizes.</p>
+      </div>
+      <h3>The Margin Property</h3>
+      <div class="margin1">
+        <p>The margin property determines how much space exists beyond the
+          border surrounding the box element. By adjusting the margin-top,
+          margin-left, margin-bottom and margin-left properties, more space can
+          be used to create space between any other box elements. In this
+          example, the margin is set to default.</p>
+      </div>
+      <div class="margin2">
+        <p>This box has the margins set to 50px on the left side. You should be
+          able to see that it's been shifted out from the right by 50px.</p>
+      </div>
+      <div class="margin3">
+        <p>This box has the margins set to 160px on the left side. You should be
+          able to see that it's been shifted out from the right by 160px.</p>
+      </div>
+      <h2>Changing Style on Hover</h2>
+      <p>Hovering over an element means moving your mouse above it. However, it
+        cannot be utitlized by the user if they do not have a device for
+        hovering (eg. finger tapping on mobile and tablets).</p>
+      <p>Although hovering must be used wisely to account for all types of
+        devices and usability, applying a hover style can indicate to users of a
+        certain action or to help an element stand out.</p>
+      <div class="hover1">
+        <p>Example 1: No hover</p>
+      </div>
+      <div class="hover2">
+        <p>Example 2: Hover style changes the background color from blue to
+          orange over a period of 4 seconds.</p>
+      </div>
+      <div class="hover3">
+        <p>Example 3: Hover style expands the width and height to 500px each
+          over a period of 2 seconds.</p>
+      </div>
+      <h2>Color Contrast</h2>
+      <p>Color contrast is important to consider to ensure web accessibility and
+        that your user can actually see your content easily. Below is a table
+        with a few examples of color contrasts. When contrasting colors, it is
+        best to aim for a AA or AAA rating. More information about color
+        contrast can be found <a
+          href="https://webaim.org/resources/contrastchecker/"
+          title="Link to web accessibility color contraster checker"
+          target="_blank">here</a>.</p>
+      <table>
+        <tr>
+          <th>Text</th>
+          <th>Background Color</th>
+          <th>Text Color</th>
+          <th>Contrast Ratio</th>
+          <th>Rating</th>
+        </tr>
+        <tr>
+          <td class="text1">Lorem ipsum dolor sit amet.</td>
+          <td>#022D72</td>
+          <td>#ffffff</td>
+          <td>12.95:1</td>
+          <td>AAA</td>
+        </tr>
+        <tr>
+          <td class="text2">Lorem ipsum dolor sit amet.</td>
+          <td>#369B92</td>
+          <td>#000000</td>
+          <td>6.26:1</td>
+          <td>AA</td>
+        </tr>
+        <tr>
+          <td class="text3">Lorem ipsum dolor sit amet.</td>
+          <td>#7D4699</td>
+          <td>#E0E0E0</td>
+          <td>4.95:1</td>
+          <td>AA</td>
+        </tr>
+        <tr>
+          <td class="text4">Lorem ipsum dolor sit amet.</td>
+          <td>#9CF700</td>
+          <td>#ffffff</td>
+          <td>1.33:1</td>
+          <td>None</td>
+        </tr>
+        <tr>
+          <td class="text5">Lorem ipsum dolor sit amet.</td>
+          <td>#C10E01</td>
+          <td>#F28A13.</td>
+          <td>2.52:1</td>
+          <td>None</td>
+        </tr>
+      </table>
+      <h2>Positions</h2>
+      <h3>Relative Position</h3>
+      <p>Relative positioning sets the position relative to itself. Changing the
+        top, right, bottom and left will move the image from where it would
+        naturally appear. The bee picture below has been set to a relative
+        position, and it has been moved 10px from the left.</p>
+      <h3>Absolute Position</h3>
+      <p>Elements with an absolute position will stray outside of the document
+        flow and anchor itself to its first positioned ancestor. If there are no
+        positioned ancestors, then the element will anchor itself to the initial
+        document html. Changing the top, right, bottom and left properties will
+        cause the element to move relative to its parent element. For example,
+        the iceberg picture below is set to absolute and at 200px from the
+        right. It also has a z-index, which determines overlapping images. Since
+        the z-index is positive at 2, it will be placed in the forefront above
+        the fireworks image.</p>
+      <h3>Fixed Position</h3>
+      <p>Last but not least, the fireworks image to the right has a fixed
+        position. A fixed position causes the element to stay anchored with the
+        HTML document as a whole. Scrolling will not impact it, and it will
+        remain on the page when scrolling. Moving the image through the top,
+        right, bottom and left properties will cause it to move relative to the
+        HTML document. In the fireworks example, the image is set to 500px from
+        the bottom and 0px from the right. The z-index has been set to -2 so it
+        will go behind any other elements that overlap it.</p>
+      <img src="resources/fireworks_opt.jpg" alt="Fireworks at night"
+        width="300" height="200" class="position1">
+      <img src="resources/bees_opt.jpg" alt="Bee on flower" width="300"
+        height="200" class="position2">
+      <img src="resources/iceberg_opt.jpg" alt="Iceberg in Antarctica"
+        width="300" height="200" class="position3">
+      <h2>Shadows</h2>
+      <div>
+        <p class='hshadow1'>Horizontal Property</p>
+        <p class='hshadow2'>Horizontal Property</p>
+        <p>The h-shadow is the first element of the text-shadow property. It
+          specifies how horizontally far away the shadow should be from the
+          text. The first h-shadow text above is set at 3px while the second
+          v-shadow text is set to 10px. When using the text-shadow property,
+          this is a required field.</p>
+      </div>
+      <div>
+        <p class='vshadow1'>Vertical Property</p>
+        <p class='vshadow2'>Vertical Property</p>
+        <p>The v-shadow is the second element of the text-shadow property. It
+          specifies how vertically far away the shadow should be from the text.
+          The first v-shadow text below is set at 3px while the second v-shadow
+          text is set to 10px. When using the text-shadow property, this is a
+          required field.</p>
+      </div>
+      <div>
+        <p class='blur1'>Blur Property</p>
+        <p class='blur2'>Blur Property</p>
+        <p>The blur-radius is the third element of the text-shadow property.
+          Setting the blur value higher will cause the shadow to become wider
+          and lighter. The first blur shadow is set at 3px, but the second blur
+          value is set to 10px. </p>
+      </div>
+    </main>
+  </div>
+  <footer class="row">
+    <div class="col-5">
+      <h3>Leave a Comment</h3>
+      <form> Name: <input type="text" name="user_name"><br> Email: <input
+          type="text" name="user_email"><br>Comments:<br> <textarea rows="5"
+          cols="50" name="comment"></textarea><br>
+        <button type="submit">Submit Comment</button></form>
+    </div>
+    <div class="col-5 center">
+      <h3>Receive Notifications</h3>
+      <input class="center" size="23" type="text"
+        placeholder="Sign up for Email Updates">
+      <button type="submit">Sign Up</button>
+    </div>
+    <div class="col-2 center">
+      <h3>Follow Me</h3>
+      <a href="https://www.linkedin.com/in/wendalyntran" target="_blank"
+        title="Author's LinkedIn profile"><img class="linkedin"
+          src="resources/linkedin_logo.png" alt="LinkedIn Logo" width="35"
+          height="35"></a>
+      <a href="https://github.com/twendy00/School" target="_blank"
+        title="Author's GitHub account">
+        <img class="github" src="resources/github_logo_opt.png"
+          alt="Github Logo" width="35" height="35"></a>
+    </div>
+  </footer>
+</body>
+
+</html>
