@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <meta name="description" content="User survey form">
+  <meta name="author" content="Wendy Tran">
+  <meta name="keywords" content="survey">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="SurveyForm.css">
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <main>
+    <form method="GET" action="URL" id="survey-form">
+      <p id="description">Let us know how we can improve our services.</p>
+      <div class=" leftTab col-6">
+        <label id="name-label" for="name">* Name</label>
+      </div>
+      <div class=" rightTab col-6">
+        <input autofocus type="text" name="name" id="name" class="input-field"
+          placeholder="Enter your name" required>
+      </div>
+      <div class="  leftTab col-6">
+        <label id="email-label" for="email">* Email</label>
+      </div>
+      <div class="  rightTab col-6">
+        <input type="email" name="email" id="email" class="input-field"
+          placeholder="Enter your email" required>
+      </div>
+      <div class="  leftTab col-6">
+        <label id="number-label" for="age">* Age</label>
+      </div>
+      <div class="  rightTab col-6">
+        <input type="number" name="age" id="number" min="1" max="125"
+          class="input-field" placeholder="Enter your age" required>
+      </div>
+      <div class="leftTab col-6">
+        <label>Current Occupation Status</label>
+      </div>
+      <div class="rightTab col-6">
+        <select id="dropdown">
+          <option value="full-time">Full-Time Employed</option>
+          <option value="part-time">Part-Time Employed</option>
+          <option value="unemployed">Unemployed</option>
+          <option value="student">Student</option>
+        </select>
+      </div>
+      <div class="leftTab col-6">
+        <label>How likely would you recommend our product to a friend?</label>
+      </div>
+      <div class="rightTab col-6">
+        <label><input type="radio" name='NPS'
+            value="Definitely">Definitely</label><br>
+        <label><input type="radio" name='NPS' value="Maybe">Maybe</label><br>
+        <label><input type="radio" name='NPS' value="No">No</label><br>
+      </div>
+      <div class="leftTab col-6">
+        <label>What do you like most about our product?</label>
+      </div>
+      <div class="rightTab col-6">
+        <select id="dropdown">
+          <option value="Cost">Cost</option>
+          <option value="Convenience">Convenience</option>
+          <option value="Quality">Quality</option>
+        </select>
+      </div>
+      <div class="leftTab col-6">
+        <label>Things that should be improved in the future (Check all that
+          apply): </label>
+      </div>
+      <div class="rightTab col-6">
+        <label><input type="checkbox" name='Suggested Improvements'
+            value="Packaging">Packaging</label><br>
+        <label><input type="checkbox" name='Suggested Improvements'
+            value="Shipping">Shipping</label><br>
+        <label><input type="checkbox" name='Suggested Improvements'
+            value="Crab health/condition">Crab health/condition</label><br>
+        <label><input type="checkbox" name='Suggested Improvements'
+            value="Crab options">Crab Options</label><br>
+        <label><input type="checkbox" name='Suggested Improvements'
+            value="Pricing">Pricing</label><br>
+        <label><input type="checkbox" name='Suggested Improvements'
+            value="Nothing">No</label><br>
+      </div>
+      <div class="leftTab col-6">
+        <label>Any Comments or Suggestions?</label>
+      </div>
+      <div class="rightTab col-6">
+        <textarea id="comments" class="input-field"
+          style="height: 100px; width: 200px;resize: horizontal;" name="comment"
+          placeholder="Enter your comments here...."></textarea>
+      </div>
+      <div class="center">
+        <input type="submit" id="submit">
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>

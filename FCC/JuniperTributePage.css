@@ -1,0 +1,40 @@
+
+body {
+    background-color: #E6E6FA;
+    text-align: center;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+#img-div {
+    background-color: #FFFFFF;
+    padding: 30px 15px 5px 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+ul {
+    text-align: left;
+    width: 500px;
+    margin: auto;
+    display: block;
+    background-color: #E6E6FA;
+}
+
+#quote {
+    font-style: italic;
+}
+
+#quote_author{
+    text-align: right;
+    margin-right: 200px;
+}
