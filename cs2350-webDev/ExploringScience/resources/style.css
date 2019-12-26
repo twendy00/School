@@ -1,0 +1,280 @@
+/*
+color scheme:
+Dark blue:
+Lighest blue #336078
+Ligher blue #19475F
+Dark blue #083045
+Darker blue #021E2D
+Darkest blue #001018
+
+Yellow:
+Lightest Yellow #FFF2BF
+Lighter Yellow #FFEA96
+Yellow #EED369
+Darker Yellow #CDB041
+Darkest Yellow AA8E21
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: lora;
+  src: url(lora.ttf);
+}
+
+body {
+  background: #021E2D url(stardust.png);
+  font-family: lora;
+  color: #EED369;
+  margin-left: -24px;
+  margin-right: -24px;
+  padding: 12px 24px;
+}
+
+a:link, a:visited {
+  color: #FFF2BF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #CDB041;
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #CDB041;
+}
+
+header {
+  height: 180px;
+  background: url(science.png) repeat-x center;
+  padding-top: 60px;
+  margin-left: -48px;
+  margin-right: -48px;
+  margin-bottom: 24px;
+}
+
+header p {
+  height: 82px;
+  width: 420px;
+  background-color: #021E2D;
+  color: #FFF2BF;
+  font-size: 46px;
+  line-height: 82px;
+  text-align: center;
+  margin: auto;
+  border-radius: 86px;
+  font-weight: bold;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav a:link, nav a:visited {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  height: 46px;
+  line-height: 46px;
+  border: 2px #021E2D solid;
+  text-align: center;
+  color: #021E2D;
+  text-decoration: none;
+  border-radius: 24px;
+  background-color: #FFF2BF;
+  width: 100%;
+}
+
+nav a:hover {
+  background-color: #FFEA96;
+  color: #001018;
+}
+
+main section {
+  border: solid 1px #19475F;
+  box-shadow: 4px 4px 12px #19475F, -4px -4px 12px #19475F;
+  border-radius: 12px;
+  margin: 48px 0;
+  padding: 12px;
+  transition: box-shadow 1s;
+  background-color: #021E2D;
+}
+
+main section a:link,
+main section a:visited,
+main section a:hover {
+  text-decoration: none;
+  color: #EED369;
+}
+
+main section:hover {
+  box-shadow: 8px 8px 24px #336078, -8px -8px 24px #336078;
+}
+
+main section h2 {
+  padding-top: 24px;
+}
+
+main section img {
+  float: left;
+  margin-right: 24px;
+  margin-bottom: 18px;
+}
+
+main section p {
+  clear: both;
+}
+
+aside h2 {
+  text-align: center;
+}
+
+aside h3 {
+  padding: 12px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+aside hr {
+  width: 80%;
+  border: 3px #EED369 outset;
+  border-radius: 3px;
+}
+
+footer p {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+footer img {
+  margin: 8px;
+}
+
+div spacer {
+    display: none;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+
+/*Tablet Layout*/
+@media screen and (min-width: 768px) {
+
+body {
+    margin: 0;
+    padding: 24px 48px;
+}
+
+
+nav a:link, nav a:visited {
+    width: 100%;
+}
+
+main {
+    float: right;
+}
+
+aside h3 {
+    text-align: center;
+    padding: 0px;
+  }
+
+
+footer img {
+    margin: 12px;
+  }
+
+footer br {
+    display: none;
+  }
+
+/* Grid System */
+
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+}
+
+@media screen and (min-width: 1120px) {
+
+body {
+    width: 1520px;
+    margin: auto;
+    padding: 24px 48px;
+}
+
+header {
+    margin-left: -98px;
+    margin-right: -98px;
+}
+
+div header {
+    text-align: center;
+}
+
+nav a:link, nav a:visited {
+    width: 100%;
+}
+
+div spacer {
+    display: block;
+}
+
+footer p {
+    text-align: left;
+}
+
+
+/* Grid System */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}

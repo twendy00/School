@@ -1,0 +1,65 @@
+
+
+
+h2 {
+  clear: both;
+}
+
+.telescope {
+  float: left;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.telescope_paragraph {
+  padding-top: 18px;  
+}
+
+.heat {
+  float:right;
+  margin-left: 24px;
+}
+
+.heat_cup {
+  float: left;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.cup_paragraph {
+  padding-top: 28px;  
+}
+
+.orbit {
+  float: left;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.orbit_paragraph {
+  padding-top: 64px;  
+}
+
+.galaxy {  
+  float:right;
+  margin-left: 24px;
+  margin-bottom: 24px;
+  transition: transform 3s, padding-right 3s, width 3s;
+}
+
+.galaxy_paragraph {
+  padding-top: 50px;
+}
+
+.galaxy:hover {
+  transform: scale(1.5);
+  padding-right: 75px;
+  width: 475px;
+}
+
+.holes {
+  float: left;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
