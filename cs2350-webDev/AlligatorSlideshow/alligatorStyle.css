@@ -1,0 +1,12 @@
+body {
+  background-color:#9CBE9D;
+  text-align: center;
+}
+img {
+  height: 300px;
+}
+section.mainContent {
+  width: 600px;
+  text-align:center;
+  margin:auto;
+}
