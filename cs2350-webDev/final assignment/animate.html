@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Flying Kitty</title>
+  <meta name="description" content="Flying Kitty Animation">
+  <meta name="keywords" content="flying, kitty, animation, balloons">
+  <meta name="author" content="Wendalyn Tran">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="resources/favicon-32x32.png">
+  <link rel="stylesheet" type='text/css' href="resources/style2.css">
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="animate.js"></script>
+</head>
+
+<body>
+  <header>
+    <img src="resources/beet_opt.png" alt="Single beet" width="100"
+      height="140">
+    <p>Wendy's Portfolio</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="icarus.html">Publish to Icarus</a></li>
+      <li>
+        <div class="dropdown">
+          <button>More &#x25BC;</button>
+          <div class="dropdown-content">
+            <a class="dropdown-buttons" href="cssconcepts.html">CSS Concepts</a>
+            <a class="dropdown-buttons" href="meals.html">Meal Planning</a>
+            <a class="dropdown-buttons" href="madlibs.html">Mad Libs</a>
+            <a class="dropdown-buttons" href="cats.html">Cat Breeds</a>
+            <a class="dropdown-buttons" href="wine.html">Wine Subscription</a>
+            <a class="dropdown-buttons" href="animate.html">Flying Kitty</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <h1 id="kittyheader">Flying Kitty!</h1>
+  <p class="kittytext center">Look at the cute kitty. Press the button below to
+    help the kitty fly away.</p>
+  <div class="center">
+    <img id="kittyimg" src="resources/flyingcat_opt.png"
+      alt="Kitty tied to flying balloons" width="400" height="600">
+  </div>
+  <div class="center">
+    <button id="kittybutton" class="kittyFlyButton">Click for the Kitty to
+      Fly</button>
+  </div>
+  <footer class="row">
+    <div class="col-5">
+      <h3>Leave a Comment</h3>
+      <form> Name: <input type="text" name="user_name"><br> Email: <input
+          type="text" name="user_email"><br>Comments:<br> <textarea rows="5"
+          cols="50" name="comment"></textarea><br>
+        <button type="submit">Submit Comment</button></form>
+    </div>
+    <div class="col-5 center">
+      <h3>Receive Notifications</h3>
+      <input class="center" size="23" type="text"
+        placeholder="Sign up for Email Updates">
+      <button type="submit">Sign Up</button>
+    </div>
+    <div class="col-2 center">
+      <h3>Follow Me</h3>
+      <a href="https://www.linkedin.com/in/wendalyntran" target="_blank"
+        title="Author's LinkedIn profile"><img class="linkedin"
+          src="resources/linkedin_logo.png" alt="LinkedIn Logo" width="35"
+          height="35"></a>
+      <a href="https://github.com/twendy00/School" target="_blank"
+        title="Author's GitHub account">
+        <img class="github" src="resources/github_logo_opt.png"
+          alt="Github Logo" width="35" height="35"></a>
+    </div>
+  </footer>
+</body>
+
+</html>

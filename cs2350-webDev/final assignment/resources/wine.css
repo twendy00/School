@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+  }
+
+  [class = "col-"] {
+    width: 100%
+}
+
+main section {
+    background: #DEF2F1; /*#F9F9F9*/
+    border: 0px;
+}
+
+main section:hover {
+    box-shadow: none;
+}
+
+fieldset {
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #AA2B73;
+}
+
+legend {
+    font-size: 24px;
+    color: #AA2B73;
+}
+
+label {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+span.heading {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+select {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+main input[type="text"], main input[type="email"], main input[type="number"], main input[type="submit"] {
+    height: 25px;
+    border: 1px solid #B9538D;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+main input[type="submit"] {
+    background-color: #228B22;
+    border: 0px;
+    color: #FFFFFF;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main input[type="radio"] {
+    text-align: center;
+}
+
+input.cost {
+    width: 90px;
+}
+
+input.quantity, .narrow {
+    width: 55px;
+}
+
+input.price {
+    margin-left: -10px;
+}
+
+main input[type="checkbox"]{
+    margin-left: 70px;
+ }
+
+.none {
+    display: none;
+}
+
+.left {
+    text-align: right;
+}
+
+.right {
+    text-align: left;
+}
+
+hr {
+    border-top: solid 3px #B9538D;
+    border-left: none;
+    border-bottom: none;
+}
+
+#grandTotal {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Grid System */
+.c-1 {width: 8.33%;}
+.c-2 {width: 16.66%;}
+.c-3 {width: 25%;}
+.c-4 {width: 33.33%;}
+.c-5 {width: 41.66%;}
+.c-6 {width: 50%;}
+.c-7 {width: 58.33%;}
+.c-8 {width: 66.66%;}
+.c-9 {width: 75%;}
+.c-10 {width: 83.33%;}
+.c-11 {width: 91.66%;}
+.c-12 {width: 100%;}
+
+
+@media only screen and (min-width: 820px) {
+
+fieldset {
+    max-width: 650px;
+}
+
+input.quantity {
+    margin-left: 55px;
+}
+
+input.cost {
+    margin-left: 90px;
+}
+
+.price {
+    margin-left: -20px;
+}
+
+main.input[type="checkbox"]{
+   margin-left: 90px;
+}
+
+.leftTab {
+    text-align: right;
+}
+
+.rightTab {
+    text-align: left;
+    width: 200px;
+}
+
+}

@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wine Subscription</title>
+  <meta name="description" content="wine subscription">
+  <meta name="keywords" content="wine, wine subscription">
+  <meta name="author" content="Wendalyn Tran">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="resources/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="resources/style2.css">
+  <link rel="stylesheet" type="text/css" href="resources/wine.css">
+  <script src="wine.js"></script>
+</head>
+
+<body>
+  <header>
+    <img src="resources/beet_opt.png" alt="Single beet" width="100"
+      height="140">
+    <p>Wendy's Portfolio</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="icarus.html">Publish to Icarus</a></li>
+      <li>
+        <div class="dropdown">
+          <button>More &#x25BC;</button>
+          <div class="dropdown-content">
+            <a class="dropdown-buttons" href="cssconcepts.html">CSS Concepts</a>
+            <a class="dropdown-buttons" href="meals.html">Meal Planning</a>
+            <a class="dropdown-buttons" href="madlibs.html">Mad Libs</a>
+            <a class="dropdown-buttons" href="cats.html">Cat Breeds</a>
+            <a class="dropdown-buttons" href="wine.html">Wine Subscription</a>
+            <a class="dropdown-buttons" href="animate.html">Flying Kitty</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <form method="POST"
+      action="http://icarus.cs.weber.edu/~linda/cs2350/submit.php">
+      <h1>Wine Subscription Order Form</h1>
+      <fieldset id="personal_info">
+        <legend>Personal Information</legend>
+        <div class="row">
+          <p>
+            <label for="name" class="leftTab c-6 col-m-6 col-6">Name</label>
+            <input type="text" name="name" id="name"
+              class="rightTab c-6 col-m-6 col-6">
+          </p>
+        </div>
+        <div class="row">
+          <p>
+            <label for="email" class="leftTab c-6 col-m-6 col-6">Email</label>
+            <input type="email" name="email" id="email"
+              class="rightTab c-6 col-m-6 col-6">
+          </p>
+        </div>
+        <div class="row">
+          <p>
+            <label for="address"
+              class="leftTab c-6 col-m-6 col-6">Address</label>
+            <input type="text" name="address" id="address"
+              class="rightTab c-6 col-m-6 col-6">
+          </p>
+        </div>
+        <div class="row">
+          <p>
+            <label for="city" class="leftTab c-6 col-m-6 col-6">City</label>
+            <input type="text" name="city" id="city"
+              class="rightTab c-6 col-m-6 col-6">
+          </p>
+        </div>
+        <div class="row">
+          <p>
+            <label for="state" class="leftTab c-6 col-m-6 col-6">State</label>
+            <input type="text" name="state" id="state"
+              class="rightTab c-6 col-m-6 col-6 left">
+          </p>
+        </div>
+        <div class="row">
+          <p>
+            <label for="zip" class="leftTab c-6 col-m-6 col-6">Zip Code</label>
+            <input type="text" name="zip" id="zip"
+              class="rightTab c-6 col-m-6 col-6">
+          </p>
+        </div>
+        <div class="row">
+          <label for="preferences" class="leftTab c-6 col-m-6 col-6">Drinking
+            Preferences</label>
+          <select id="preferences" name="preferences"
+            class="rightTab c-6 col-m-6 col-6">
+            <option value="personal">Personally/Individually</option>
+            <option value="social">Socially</option>
+            <option value="pro">Professionally (sommelier, etc.) </option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset id="subscription">
+        <legend>Subscription Type</legend>
+        <input type="radio" name="subscription" id="individual">
+        <label for="individual">Individual Selection</label> <br>
+        <input type="radio" name="subscription" id="random">
+        <label for="random">Random Selection</label>
+      </fieldset>
+      <fieldset id="quantity">
+        <legend>Quantity</legend>
+        <div class="row center">
+          <p>
+            <span class="heading c-3 col-m-3 col-3">Product</span>
+            <span class="heading c-3 col-m-3 col-3">Price</span>
+            <span class="heading c-3 col-m-3 col-3">Quantity</span>
+            <span class="heading c-3 col-m-3 col-3">Cost</span>
+          </p>
+        </div>
+        <div class="row center">
+          <p>
+            <label for="bottles" class="c-3 col-m-3 col-3">Bottles</label>
+            <span class="price c-3 col-m-3 col-3">$14.99</span>
+            <input type="text" name="bottles" id="bottles"
+              class="quantity c-3 col-m-3 col-3">
+            <input type="text" id="bottle_cost" class="cost c-3 col-m-3 col-3"
+              name="bottle_cost" value="0.00" readonly>
+          </p>
+        </div>
+        <div class="row center">
+          <p>
+            <label for="appetizers" class="c-3 col-m-3 col-3">Appetizer
+              Pairings</label>
+            <span class="price c-3 col-m-3 col-3">$9.99</span>
+            <input type="text" name="appetizers" id="appetizers"
+              class="quantity c-3 col-m-3 col-3">
+            <input type="text" id="app_cost" class="cost c-3 col-m-3 col-3"
+              name="app_cost" value="0.00" readonly>
+          </p>
+        </div>
+        <div class="row center">
+          <p>
+            <label for="samples" class="c-3 col-m-3 col-3">Wine Samples</label>
+            <span class="price c-3 col-m-3 col-3">$6.99</span>
+            <input type="text" name="samples" id="samples"
+              class="quantity c-3 col-m-3 col-3">
+            <input type="text" id="sample_cost" class="cost c-3 col-m-3 col-3"
+              name="sample_cost" value="0.00" readonly>
+          </p>
+        </div>
+      </fieldset>
+      <fieldset id="individual_select" class="none">
+        <legend>Individual Selection</legend>
+        <div class="row">
+          <p class="center">Select how many bottles of each wine you would like.
+          </p>
+          <div class="col-m-12 col-12">
+            <div class="row">
+              <h3 class="center col-m-6 col-6">Red Wines</h3>
+              <h3 class="center col-m-6 col-6">White Wines</h3>
+            </div>
+            <div class="row">
+              <p>
+                <label for="noir_qty" class="red col-3 col-m-3 left">Pinot
+                  Noir</label>
+                <input type="text" id="noir_qty" name="noir_qty"
+                  class="narrow col-2 col-m-2 right">
+              </p>
+              <p class="col-2 col-m-2"></p>
+              <p>
+                <label for="grigio_qty" class="white col-3 col-m-3 left">Pinot
+                  Grigio</label>
+                <input type="text" id="grigio_qty" name="grigio_qty"
+                  class="narrow col-2 col-m-2 right">
+              </p>
+            </div>
+            <div class="row">
+              <p>
+                <label for="zinfandel_qty"
+                  class="red col-3 col-m-3 left">Zinfandel</label>
+                <input type="text" id="zinfandel_qty" name="zinfandel_qty"
+                  class="narrow col-2 col-m-2 right">
+              </p>
+              <p class="col-2 col-m-2"></p>
+              <p>
+                <label for="riesling_qty"
+                  class="white col-3 col-m-3 left">Riesling</label>
+                <input type="text" id="riesling_qty" name="riesling_qty"
+                  class="narrow col-2 col-m-2 right">
+              </p>
+            </div>
+            <div class="row">
+              <p>
+                <label for="syrah_qty"
+                  class="red col-3 col-m-3 left">Syrah</label>
+                <input type="text" id="syrah_qty" name="syrah_qty"
+                  class="narrow col-2 col-m-2 right">
+              </p>
+              <p class="col-2 col-m-2"></p>
+              <p>
+                <label for="blanc_qty"
+                  class="white col-3 col-m-3 left">Sauvignon Blanc</label>
+                <input type="text" id="blanc_qty" name="blanc_qty"
+                  class="narrow col-2 col-m-2 right">
+              </p>
+            </div>
+            <div class="row">
+              <p>
+                <label for="cabernet_qty"
+                  class="red col-3 col-m-3 left">Cabernet Sauvignon</label>
+                <input type="text" id="cabernet_qty" name="cabernet_qty"
+                  class="narrow col-2 col-m-2 right">
+              </p>
+              <p class="col-2 col-m-2"></p>
+              <p>
+                <label for="chardonnay_qty"
+                  class="white col-3 col-m-3 left">Chardonnay</label>
+                <input type="text" id="chardonnay_qty" name="chardonnay_qty"
+                  class="narrow col-2 col-m-2 right">
+              </p>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset id="random_select" class="none">
+        <legend>Random Selection</legend>
+        <div class="row">
+          <p>Select as many types as you would like, and we will send you a
+            random assortment based on your preferences.</p>
+          <div class="col-m-6 col-6">
+            <h3 class="center">Red Wines</h3>
+            <p>
+              <input type="checkbox" id="noir" name="noir" value="yes">
+              <label for="noir" class="red">Pinot Noir</label>
+            </p>
+            <p>
+              <input type="checkbox" id="zinfandel" name="zinfandel"
+                value="yes">
+              <label for="zinfandel" class="red">Zinfandel</label>
+            </p>
+            <p>
+              <input type="checkbox" id="syrah" name="syrah" value="yes">
+              <label for="syrah" class="red">Syrah</label>
+            </p>
+            <p>
+              <input type="checkbox" id="cabernet" name="cabernet" value="yes">
+              <label for="cabernet" class="red">Cabernet Sauvignon</label>
+            </p>
+          </div>
+          <div class="col-m-6 col-6">
+            <h3 class="center">White Wines</h3>
+            <p>
+              <input type="checkbox" id="riesling" name="riesling" value="yes">
+              <label for="riesling" class="white">Riesling</label>
+            </p>
+            <p>
+              <input type="checkbox" id="grigio" name="grigio" value="yes">
+              <label for="grigio" class="white">Pinot Grigio</label>
+            </p>
+            <p>
+              <input type="checkbox" id="blanc" name="blanc" value="yes">
+              <label for="blanc" class="white">Sauvignon Blanc</label>
+            </p>
+            <p>
+              <input type="checkbox" id="chardonnay" name="chardonnay"
+                value="yes">
+              <label for="chardonnay" class="white">Chardonnay</label>
+            </p>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset id="optional">
+        <legend>Optional</legend>
+        <p>
+          <input type="checkbox" id="promotions" name="promotions" value="yes">
+          <label for="promotions" class="add-ons">Sign up to receive email
+            promotions</label>
+        </p>
+      </fieldset>
+      <fieldset class="total">
+        <legend>Order Summary</legend>
+        <div class="row">
+          <p class="center">
+            <label for="totalBottles" class="col-m-6 col-6 left">Total
+              Bottles</label>
+            <input type="text" name="totalBottles" id="totalBottles"
+              class="cost col-m-6 col-6 right" value="0.00" readonly>
+          </p>
+          <p class="center">
+            <label for="totalApps" class="col-m-6 col-6 left">Total Appetizer
+              Pairings</label>
+            <input type="text" name="totalApps" id="totalApps"
+              class="cost col-m-6 col-6 right" value="0.00" readonly>
+          </p>
+          <p class="center">
+            <label for="totalSamples" class="col-m-6 col-6 left">Total Wine
+              Samples</label>
+            <input type="text" name="totalSamples" id="totalSamples"
+              class="cost col-m-6 col-6 right" value="0.00" readonly>
+          </p>
+          <hr class="col-m-12 col-12">
+          <p class="center">
+            <label for="totalCost" id="grandTotal"
+              class="col-m-6 col-6 left">Grand Total</label>
+            <input type="text" name="totalCost" id="totalCost"
+              class="cost col-m-6 col-6 right" value="0.00" readonly>
+          </p>
+        </div>
+      </fieldset>
+      <p>
+        <input type="submit" name="submit" value="Submit">
+      </p>
+    </form>
+  </main>
+  <footer class="row">
+    <div class="col-5">
+      <h3>Leave a Comment</h3>
+      <form> Name: <input type="text" name="user_name"><br> Email: <input
+          type="text" name="user_email"><br>Comments:<br> <textarea rows="5"
+          cols="50" name="comment"></textarea><br>
+        <button type="submit">Submit Comment</button></form>
+    </div>
+    <div class="col-5 center">
+      <h3>Receive Notifications</h3>
+      <input class="center" size="23" type="text"
+        placeholder="Sign up for Email Updates">
+      <button id="submit" type="submit">Sign Up</button>
+    </div>
+    <div class="col-2 center">
+      <h3>Follow Me</h3>
+      <a href="https://www.linkedin.com/in/wendalyntran" target="_blank"
+        title="Author's LinkedIn profile"><img class="linkedin"
+          src="resources/linkedin_logo.png" alt="LinkedIn Logo" width="35"
+          height="35"></a>
+      <a href="https://github.com/twendy00/School" target="_blank"
+        title="Author's GitHub account">
+        <img class="github" src="resources/github_logo_opt.png"
+          alt="Github Logo" width="35" height="35"></a>
+    </div>
+  </footer>
+</body>
+
+</html>

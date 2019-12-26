@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Publish to Icarus</title>
+  <meta name="description" content="Instructions on how to publish to Icarus">
+  <meta name="keywords" content="Icarus, publish">
+  <meta name="author" content="Wendalyn Tran">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="resources/favicon-32x32.png">
+  <link rel="stylesheet" type='text/css' href="resources/style2.css">
+</head>
+
+<body>
+  <header>
+    <img src="resources/beet_opt.png" alt="Single beet" width="100"
+      height="140">
+    <p>Wendy's Portfolio</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="icarus.html">Publish to Icarus</a></li>
+      <li>
+        <div class="dropdown">
+          <button>More &#x25BC;</button>
+          <div class="dropdown-content">
+            <a class="dropdown-buttons" href="cssconcepts.html">CSS Concepts</a>
+            <a class="dropdown-buttons" href="meals.html">Meal Planning</a>
+            <a class="dropdown-buttons" href="madlibs.html">Mad Libs</a>
+            <a class="dropdown-buttons" href="cats.html">Cat Breeds</a>
+            <a class="dropdown-buttons" href="wine.html">Wine Subscription</a>
+            <a class="dropdown-buttons" href="animate.html">Flying Kitty</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <div class="row">
+    <main>
+      <h1>How to Publish a Website to the Icarus Server</h1>
+      <h2>Upload to Icarus</h2>
+      <ul>
+        <li>First, make sure that you have a FTP client. If not, there are
+          several available that you can download such as WinSCP, FileZilla,
+          etc. Personally, I use <a href="https://cyberduck.io/"
+            title="Takes you to the Cyberduck homepage"
+            target="_blank">Cyberduck</a>. </li>
+        <li>Open your FTP client, and open a new connection. Change the first
+          drop down box to SFTP (SSH File Transfer protocol).</li>
+        <li>In the Server text box, enter the following: icarus.cs.weber.edu.
+          The port should remain as 22.</li>
+        <li>Your username will be your first and last initials followed by the
+          last 5 digits of your W-number.</li>
+        <li>Your password is your first name (first letter is capitalized)
+          followed by cs!.</li>
+      </ul>
+      <img src="resources/icarus1_opt.png" alt="Example of logging into Icarus"
+        width="400" height="344">
+      <ul>
+        <li>Once connected, create a new folder or select an existing folder to
+          upload a file.</li>
+        <li>To upload a single file, select Action (the gear symbol) and then
+          Upload. Select the file you'd like to upload and click Upload.</li>
+      </ul>
+      <img src="resources/icarus2_opt.png"
+        alt="Example that shows how to upload to Icarus" width="400"
+        height="346">
+      <ul>
+        <li>To upload multiple files or an entire folder, you can drag and drop
+          or copy and paste the items into your FTP client.</li>
+      </ul>
+      <img src="resources/icarus3_opt.png"
+        alt="Example of transferring multiple files into Icarus" width="567"
+        height="346">
+      <h2>Compose a URL</h2>
+      <p>When you compose a URL, it will consist of the following components (in
+        this order):</p>
+      <p>Protocol, server/host name, forward slash, tilde, username for your
+        account, forward slash, the path to the file, forward slash, file name,
+        forward slash.</p>
+      <p>So putting all of this together in an example:</p>
+      <ul>
+        <li>Your protocol will be: http://</li>
+        <li>The server/host name is: icarus.cs.weber.edu</li>
+        <li>In this example, the user name is wt65542.</li>
+        <li>In this example, the path and file name will be
+          cs2350/la2files/distractions.html/</li>
+      </ul>
+      <p>http://icarus.cs.weber.edu/~wt65542/cs2350/la2files/distractions.html
+      </p>
+      <p>However, if you do not want the file name to show in the URL link, you
+        can name the file as index.html. This is typically done for a default or
+        home page. For the above example, if the file distractions.html was
+        actually called index.html, the URL link would now be:</p>
+      <p>http://icarus.cs.weber.edu/~wt65542/cs2350/la2files/</p>
+      <p>More examples can be found below.<p>
+          <h3>Example 1</h3>
+          <p>http://icarus.cs.weber.edu/~wt65542/meals.html</p>
+          <p>In this example, the file is saved directly into the public_html
+            folder. It is not saved in any other folder, so the URL does not
+            need to reference a path or any other folder. After your username,
+            you can reference the file name directly.</p>
+          <img src="resources/url1_opt.png"
+            alt="First URL example - file is saved in the public_html folder"
+            width="400" height="345">
+          <h3>Example 2</h3>
+          <p>http://icarus.cs.weber.edu/~wt65542/cs2350/pa2/wise.html</p>
+          <p>In this example, the file is saved in 2 folders beyond public_html.
+            It is saved in the folder CS2350 and pa2. The URL needs to reference
+            both of these folders, or the path, first before it can reference
+            the file. </p>
+          <img src="resources/url2_opt.png"
+            alt="Second URL example -  file is saved in a folder 2 layers deep in public_html"
+            width="400" height="348">
+          <h3>Example 3</h3>
+          <p>http://icarus.cs.weber.edu/~wt65542/cs2350/la2files/</p>
+          <p>In this example, the file is saved as an index.html file, so the
+            file name will not need to be included in the URL. However, since
+            this file is still 2 folders deep into public_html, the path will
+            still need to be specified.</p>
+          <img src="resources/url3_opt.png"
+            alt="Third URL example - index.html file is saved in a folder 2 layers deep in public_html"
+            width="400" height="347">
+    </main>
+  </div>
+  <footer class="row">
+    <div class="col-5">
+      <h3>Leave a Comment</h3>
+      <form> Name: <input type="text" name="user_name"><br> Email: <input
+          type="text" name="user_email"><br>Comments:<br> <textarea rows="5"
+          cols="50" name="comment"></textarea><br>
+        <button type="submit">Submit Comment</button></form>
+    </div>
+    <div class="col-5 center">
+      <h3>Receive Notifications</h3>
+      <input class="center" size="23" type="text"
+        placeholder="Sign up for Email Updates">
+      <button type="submit">Sign Up</button>
+    </div>
+    <div class="col-2 center">
+      <h3>Follow Me</h3>
+      <a href="https://www.linkedin.com/in/wendalyntran" target="_blank"
+        title="Author's LinkedIn profile"><img class="linkedin"
+          src="resources/linkedin_logo.png" alt="LinkedIn Logo" width="35"
+          height="35"></a>
+      <a href="https://github.com/twendy00/School" target="_blank"
+        title="Author's GitHub account">
+        <img class="github" src="resources/github_logo_opt.png"
+          alt="Github Logo" width="35" height="35"></a>
+    </div>
+  </footer>
+</body>
+
+</html>

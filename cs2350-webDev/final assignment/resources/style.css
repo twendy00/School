@@ -1,0 +1,148 @@
+
+div.padding1 {
+    background-color: #9AE587;
+    border: solid 5px #E534cd;
+    width: 400px;
+    padding: 30px;
+}
+
+div.padding2 {
+    background-color: #ED9F04;
+    border: dotted 3px #e53434;
+    width: 400px;
+    padding: 50px 125px;
+}
+
+div.padding3 {
+    background-color: #B572E5;
+    border: dashed 8px #34e5cd;
+    width: 400px;
+    padding: 150px 120px 75px 50px;
+}
+
+
+div.margin1 {
+    background-color: #e3e572;
+    border: double 5px #e5728d;
+    width: 400px;
+    padding: 50px;
+}
+
+div.margin2 {
+    background-color: #72e5c1;
+    border: outset 10px #181da5;
+    width: 400px;
+    padding: 50px;
+    margin-left: 50px;
+}
+
+div.margin3 {
+    background-color: #3ca9d1;
+    border: groove 15px #c14a05;
+    width: 400px;
+    padding: 50px;
+    margin-left: 160px;
+}
+
+div.hover1 {
+    background-color: #f7bee7;
+    border: inset 5px #e80417;
+    width: 400px;
+    padding: 50px;
+    margin: 75px;
+}
+
+div.hover2 {
+    background-color: #bad3ef;
+    border: solid 10px #4a44b5;
+    width: 400px;
+    padding: 50px;
+    margin: 75px;
+}
+
+div.hover2:hover {
+    background-color: #f4c242;
+    transition: 4s;
+  }
+
+div.hover3 {
+    background-color: #aae2b4;
+    border: ridge 15px #0a9924;
+    width: 400px;
+    padding: 50px;
+    margin: 75px;
+}
+
+div.hover3:hover {
+    width: 500px;
+    height: 500px;
+    transition: 2s;
+  }
+
+td.text1{
+    background-color: #022D72;
+    color: #ffffff;
+}
+td.text2{
+    background-color: #369B92;
+    color: #000000;
+}
+td.text3{
+    background-color: #7D4699;
+    color: #E0E0E0;
+}
+td.text4{
+    background-color: #9cf700;
+    color: #ffffff;
+}
+td.text5{
+    background-color: #C10E01;
+    color: #F28A13;
+}
+
+.position1{
+    position: fixed;
+    bottom: 500px;
+    z-index: -2;
+    right: 0px;
+}
+.position2{
+    position: relative;
+    left: 10px;
+}
+.position3{
+    position: absolute;
+    z-index: 2;
+    right: 200px;
+}
+
+.hshadow1 {
+    font-size: 30px;
+    color: #0442a5;
+    text-shadow: 3px 0px 0px;
+}
+.hshadow2 {
+    font-size: 30px;
+    color: #0442a5;
+    text-shadow: 20px 0px 0px;
+}
+.vshadow1{
+    font-size: 30px;
+    color:#0c8407;
+    text-shadow: 0px 3px 0px;
+}
+.vshadow2{
+    font-size: 30px;
+    color:#0c8407;
+    text-shadow: 0px 10px 0px;
+}
+.blur1{
+    font-size: 30px;
+    color: #ce1404;
+    text-shadow: 0px 0px 3px;
+}
+.blur2{
+    font-size: 30px;
+    color: #ce1404;
+    text-shadow: 0px 0px 10px;
+}
