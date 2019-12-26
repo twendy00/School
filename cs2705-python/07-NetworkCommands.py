@@ -1,0 +1,70 @@
+import ipaddress
+import time
+
+ipInterface = ipaddress.ip_interface("138.191.0.0/25")
+ipnetwork = ipInterface.network
+classroom = (list(ipaddress.ip_network(ipnetwork).subnets(prefixlen_diff=2)))
+
+smallClass1 = (list(ipaddress.ip_network(classroom[2]).subnets()))
+smallClass2 = (list(ipaddress.ip_network(classroom[3]).subnets()))
+lab = (list(ipaddress.ip_network(smallClass2[1]).subnets()))
+
+print("")
+print("Routing Table:")
+print("-------------------------")
+
+print("")
+print("Lab 1:")
+print("-------------------------")
+print("Lab 1 - Network Address: {}".format(lab[0].network_address))
+print("Lab 1 - Broadcast Address: {}".format(lab[0].broadcast_address))
+print("Lab 1 - Number of Hosts: {}".format(len(list(lab[0].hosts()))))
+print("Lab 1 - Valid Host Range: {0} - {1}".format(lab[0].network_address + 1, lab[0].broadcast_address - 1))
+
+print("")
+print("Lab 2:")
+print("-------------------------")
+print("Lab 2 - Network Address: {}".format(lab[1].network_address))
+print("Lab 2 - Broadcast Address: {}".format(lab[1].broadcast_address))
+print("Lab 2 - Number of Hosts: {}".format(len(list(lab[1].hosts()))))
+print("Lab 2 - Valid Host Range: {0} - {1}".format(lab[1].network_address + 1, lab[1].broadcast_address - 1))
+
+print("")
+print("Classroom 3:")
+print("-------------------------")
+print("Classroom 3 - Network Address: {}".format(smallClass1[0].network_address))
+print("Classroom 3 - Broadcast Address: {}".format(smallClass1[0].broadcast_address))
+print("Classroom 3 - Number of Hosts: {}".format(len(list(smallClass1[0].hosts()))))
+print("Classroom 3 - Valid Host Range: {0} - {1}".format(smallClass1[0].network_address + 1, smallClass1[0].broadcast_address - 1))
+
+print("")
+print("Classroom 4:")
+print("-------------------------")
+print("Classroom 4 - Network Address: {}".format(smallClass1[1].network_address))
+print("Classroom 4 - Broadcast Address: {}".format(smallClass1[1].broadcast_address))
+print("Classroom 4 - Number of Hosts: {}".format(len(list(smallClass1[1].hosts()))))
+print("Classroom 4 - Valid Host Range: {0} - {1}".format(smallClass1[1].network_address + 1, smallClass1[1].broadcast_address - 1))
+
+print("")
+print("Classroom 5:")
+print("-------------------------")
+print("Classroom 5 - Network Address: {}".format(smallClass2[0].network_address))
+print("Classroom 5 - Broadcast Address: {}".format(smallClass2[0].broadcast_address))
+print("Classroom 5 - Number of Hosts: {}".format(len(list(smallClass2[0].hosts()))))
+print("Classroom 5 - Valid Host Range: {0} - {1}".format(smallClass2[0].network_address + 1, smallClass2[0].broadcast_address - 1))
+
+print("")
+print("Classroom 1:")
+print("-------------------------")
+print("Classroom 1 - Network Address: {}".format(classroom[0].network_address))
+print("Classroom 1 - Broadcast Address: {}".format(classroom[0].broadcast_address))
+print("Classroom 1 - Number of Hosts: {}".format(len(list(classroom[0].hosts()))))
+print("Classroom 1 - Valid Host Range: {0} - {1}".format(classroom[0].network_address + 1, classroom[0].broadcast_address - 1))
+
+print("")
+print("Classroom 2:")
+print("-------------------------")
+print("Classroom 2 - Network Address: {}".format(classroom[1].network_address))
+print("Classroom 2 - Broadcast Address: {}".format(classroom[1].broadcast_address))
+print("Classroom 2 - Number of Hosts: {}".format(len(list(classroom[1].hosts()))))
+print("Classroom 2 - Valid Host Range: {0} - {1}".format(classroom[1].network_address + 1, classroom[1].broadcast_address - 1))
