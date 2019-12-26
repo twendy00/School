@@ -1,6 +1,8 @@
 # Goal 
 The purpose of this course is to teach the crucial skills of problem solving. The tool used to solve problems in this course is the Java programming language. In order to use Java effectively, students will learn the fundamentals of programming using the syntax of Java. Students will then in turn use those skills to write programs to solve problems.
 
+# Textbook
+Introduction to Programming with Java: A Problem Solving Approach (2nd edition) by Dean & Dean. (ISBN: 978-0073376066)
 
 # Class Schedule and Course Outline
 
