@@ -9,3 +9,5 @@ After successful completion of this course, students will be able to:
 * Create interactive web pages using client-side JavaScript programming.
 * Use the jQuery framework to add functionality to a website.
 
+**Final Assignment**: http://icarus.cs.weber.edu/~wt65542/cs2350/hw12/
+
