@@ -1,0 +1,264 @@
+/* color scheme
+Light Green Grey
+  Lightest: #FFF
+  Lighter: #F7FAF9
+  Light Green Grey: #DCEBE6
+  Darker: #B2D2C8
+  Darkest: #7DB09F
+
+Dark Blue
+  Lightest: #000
+  Lighter: #20516B
+  Dark Blue: #0D3C55
+  Darker: #03283C
+  Darkest: #011723
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(roboto.ttf);
+}
+
+body {
+  font-family: roboto;
+  color: #011723;
+  margin: 0;
+  padding: 0 4%;
+}
+
+[class = "col-"] {
+    width: 100%
+}
+
+  header {
+    background-color: #20516B;
+    height: 160px;
+  }
+
+  header img {
+    float: left;
+    padding-left: 8px;
+    height: 160px;
+    width: auto;
+  }
+
+  header h1 {
+    color: #DCEBE6;
+    padding-top: 40px;
+    padding-left: 200px;
+  }
+
+  header h1 span{
+      display:none;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+  }
+
+  nav a, nav a:link, nav a:visited {
+    display: block;
+    color: #DCEBE6;
+    background-color: #20516B;
+    text-align: center;
+    border-top: 2px #DCEBE6 solid;
+    border-bottom: 2px #DCEBE6 solid;
+  }
+
+  nav a:hover {
+    color: #20516B;
+    background-color: #DCEBE6;
+  }
+
+
+a, a:link, a:visited {
+  color: #20516B;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 1s background-color;
+}
+
+a:hover {
+  background-color: #DCEBE6;
+}
+
+a:active {
+  color: #20516B;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 1s background-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0D3C55;
+}
+
+main.distractions section  {
+  border-left: 3px solid #20516B;
+  border-bottom: 3px solid #20516B;
+  margin: 8px;
+  padding: 12px;
+  border-radius: 14px;
+  box-shadow: -4px 4px 8px  #20516B;
+}
+
+main.distractions section img {
+  float: right;
+  margin-left: 8px;
+}
+
+main section.leading {
+  text-align: center;
+  width: 80%;
+  margin: 32px auto;
+  border-bottom: #7DB09F solid 3px;
+  border-left: none;
+  padding: 12px 15px;
+  box-shadow: 6px 6px 8px #7DB09F, -2px -2px 4px #7DB09F;
+  border-radius: 24px 0;
+}
+
+main section.leading h2 {
+  text-shadow: 1px 1px 2px #7DB09F;
+  font-size: 28px;
+}
+
+aside {
+  background-color: #20516B;
+  text-align: center;
+  padding: 8px;
+}
+
+aside h3 {
+  color: #DCEBE6;
+}
+
+aside img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+/*Tablet Layout*/
+@media only screen and (min-width: 768px) {
+
+    header h1 span {
+        display: inline;
+    }
+
+    nav ul {
+        background-color: #205168;
+        text-align: center;
+    }
+
+    nav li {
+        width: 132px;
+    }
+
+    nav a, nav a:link, nav a:visited {
+        margin: 0 -2px;
+        border: none;
+    }
+
+    /* Grid System */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+}
+
+/*Desktop Layout*/
+@media only screen and (min-width: 992px) {
+
+    header {
+        height: 200px;
+      }
+
+      header img {
+        padding-left: 24px;
+        height: 200px;
+      }
+
+      header h1 {
+        padding-top: 60px;
+        padding-left: 280px;
+      }
+
+      header h1 span {
+          display: inline;
+      }
+
+
+     nav {
+        margin-top: -60px;
+        padding-bottom: 60px;
+      }
+
+      nav ul {
+        float: right;
+        padding-right: 24px;
+      }
+
+      nav li {
+        width: 132px;
+      }
+
+      nav a, nav a:link, nav a:visited {
+        padding-left: 12px;
+        border: none;
+        margin: 0 -2px;
+      }
+
+/* Grid System */
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}

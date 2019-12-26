@@ -1,0 +1,53 @@
+/*Color scheme
+orange  #FF7F5E  
+blue    #5E73B2  #9FB6FF (light)
+green   #82B246  #9ECC65 (light)
+gray    #333  #777  #CCC (light)  
+white   #FFF 
+*/
+
+.article {
+  box-shadow: 4px 4px 8px #CCC,  -2px -2px 4px #CCC;
+  padding-left: 24px;
+}
+
+.testing {
+  border-radius: 24px 60px 90px 120px;
+}
+
+.distributed {
+  position: relative;
+  left: 180px;
+  transform: rotate(-15deg);
+}
+
+.interleaved {
+  position: relative;
+  left: 240px;
+  transform: skewX(30deg);
+}
+
+.interrogation {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 2;
+  margin-right: 0;
+  transition: transform 3s, bottom 3s, right 3s;
+}
+
+.interrogation:hover {
+  transform: scale(1.5);
+  bottom: 50px;
+  right: 75px;
+}
+
+.explain {
+  position: absolute;
+  top: 60px;
+  right: 80px;
+}
+
+.explanation {
+  position: relative;
+}

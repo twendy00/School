@@ -1,0 +1,65 @@
+/*
+blue  #4484CE
+gray   #D9D9D9
+yellow   #F9CF00
+orange   #F19F4D
+green   #43AF55
+purple  #7C50BD
+*/
+
+@font-face {
+  font-family: sofia;
+  src: url(sofia.otf);
+}
+
+body{
+  background: #D9D9D9;
+}
+
+h2 {
+  font-family: sofia;
+  font-size: 7em;
+  color: #4484CE;
+  text-align: center;
+  text-shadow: 2px 2px 4px #F9CF00;
+}
+
+div {
+  width: 960px;
+  height: 640px;
+  border:38px #F19F4D solid;
+  border-radius: 24px;
+  margin: 64px auto auto auto;
+  box-shadow: 6px 6px 18px #F19F4D, -6px -6px 18px #F19F4D;
+  position: relative;
+}
+
+.red, .purple, .green {
+  position: absolute;
+}
+
+.green {
+  top: 300px;
+  left: 460px;
+}
+
+.purple {
+  top: 300px;
+  left: 460px;
+}
+
+.red {
+  top: 300px;
+  left: 460px;
+}
+
+button {
+  display: block;
+  margin: 60px auto;
+  height: 80px;
+  width: 220px;
+  font-size: 32px;
+  background-color: #4484CE;
+  border-radius: 20px;
+  outline: none;
+}

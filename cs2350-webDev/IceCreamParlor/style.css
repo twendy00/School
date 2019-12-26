@@ -1,0 +1,72 @@
+/*
+Analogic Color Scheme
+Base	Greyed	Bold	Light	Lightest
+9EA2BE	7D7F8F	333C7C	C2C6DF	CACCDF
+A89BBD	827B8D	4D337B	CBC1DE	D0C8DE
+91A8B2	738086	2F5E74	BBCFD9	C3D2D9
+*/
+
+* {
+    box-sizing: border-box;
+}
+body {
+background-color: #9EA2BE;
+width: 820px;
+margin: auto;
+}
+
+h1, h2 {
+text-align:center;
+}
+
+label{
+  margin: 12px 4px;
+}
+input[type="text"]{
+  background-color: #D0C8DE;
+  height: 32px;
+  width: 32px;
+  padding:0px 6px;
+  margin-left: 60px;
+  outline: none;
+}
+button{
+  margin: 12px 20px 12px 40px;
+  padding: 12px;
+  border: 3px inset #C2C6DF;
+  outline: none;
+}
+button:focus {
+  background-color: #D0C8DE;
+}
+#image {
+  text-align: center;
+  padding-top: 120px;
+}
+#description {
+  margin-left: 15px;
+}
+/* Grid System */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+

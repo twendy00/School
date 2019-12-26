@@ -1,0 +1,45 @@
+/*
+Analogic Color Scheme
+Base	Greyed	Bold	Light	Lightest
+9EA2BE	7D7F8F	333C7C	C2C6DF	CACCDF
+A89BBD	827B8D	4D337B	CBC1DE	D0C8DE
+91A8B2	738086	2F5E74	BBCFD9	C3D2D9
+*/
+
+body {
+  background-color: #9EA2BE;
+  width: 860px;
+  margin: auto;
+}
+h1,h2 {
+  text-align:center;
+}
+section  {
+  padding: 12px;
+  margin: 18px;
+  border: 6px solid #333C7C;
+  border-radius: 3px;
+}
+
+label {
+    display: inline-block;
+    width: 320px;
+    text-align: right;
+    padding-right: 8px;
+    font-size: 20px;
+}
+
+input[type="text"] {
+    background-color: #D0C8DE;
+    border: solid 2px #A89BBD;
+    width: 120px;
+    height: 32px;
+}
+
+button {
+    width: 160px;
+    margin: auto;
+    display: block;
+    background-color:#A89BBD;
+    font-size: 20px;
+}

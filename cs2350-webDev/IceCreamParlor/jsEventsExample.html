@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="An introduction to JavaScript" />
+  <meta name="keywords" content="JavaScript, JS, alert, script, prompt" />
+  <meta name="author" content="Linda DuHadway" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ice Cream Parlor</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <h1>Wally's Ice Cream Parlor</h1>
+  <main>
+    <div class="row">
+      <div class="col-6">
+        <h2>Add Scoops to Build an<br>Ice Cream Cone</h2>
+        <h3>Enter how many scoops of each flavor</h3>
+        <p><input type="text" id="vanilla" value="0">
+          <label for="vanilla">Vanilla</label></p>
+        <p><input type="text" id="chocolate" value="0">
+          <label for="chocolate">Chocolate</label></p>
+        <p><input type="text" id="strawberry" value="0">
+          <label for="strawberry">Strawberry</label></p>
+        <p><button id="show">Show Me</button>
+          <button id="build">Build Cone</button></p>
+        <p><button id="showAll">Show All</button>
+          <button id="stop">End Show</button></p>
+      </div>
+      <div class="col-6" id="image">
+        <img id="picture" src="images/cone0.jpg" alt="Your ice cream cone"
+          width="200" height="300" />
+      </div>
+    </div>
+    <h3 id="description">Make the ice cream cone of your dreams!</h3>
+  </main>
+</body>
+
+</html>

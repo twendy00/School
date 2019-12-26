@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+<meta charset="UTF-8">
+
+<title>The Movies</title>
+
+<meta name="description" content="Main page to learning strategy website">
+<meta name="keywords" content="learning, effective learning strategies">
+<meta name="author" content= "Linda DuHadway">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" type="image/png" href="resources/movie_icon.png">
+<link rel="stylesheet" type="text/css" href="resources/style.css">
+<script src="resources/script.js"></script>
+</head>
+
+<body>
+<header>
+<img src="resources/movie_banner2.jpg"
+  alt="The Movies banner" id="banner"
+  width="768" height="200">
+</header>
+
+<nav>
+<ul>
+  <li><a href="" 
+    title="The Movies Home Page">
+    Home</a></li>
+  <li><a href="" 
+    title="Find out what is currently playing">
+    Currently Playing</a></li>
+  <li><a href="" 
+    title="See what movies are coming soon">
+    Coming Attractions</a></li>
+  <li><a href="" 
+    title="A map of how to find the theater">
+    Place Order</a></li>
+</ul>
+</nav>
+
+<main>
+<h2>Order Your Movie Experience Here</h2>
+
+<form method="post" 
+  action="http://icarus.cs.weber.edu/~linda/cs2350/submit.php">
+<h3>Choose Movie Details</h3>
+<div class="movie choose">
+<label for="movie">Select a Movie</label>
+<select name="movie" id="movie">
+  <option>Air Force One</option>
+  <option>ET</option>
+  <option value="3">Bambi</option>
+  <option>Spider Man</option>
+  <option>Family Man</option>
+  <option>Saving Private Ryan</option>
+</select>
+<p>
+  <label for="date">Enter a Date</label>
+  <input type="date" name="date" id="date">
+</p>
+<p>
+  <label for="time">Select a Time</label>
+  <select name="time" id="time">
+    <option>11:00</option>
+    <option>1:30</option>
+    <option>4:00</option>
+    <option>6:30</option>
+    <option>9:00</option>
+  </select>
+</p>
+</div>
+
+<h3>Choose Seating Area</h3>
+<div class="choose">
+  <p>
+    <input type="radio" name="seating" id="seating1" value="1">
+    <label for="seating1">Up Close</label>
+  </p>
+  <p>
+    <input type="radio" name="seating" id="seating2" value="2">
+    <label for="seating2">Middle-Front</label>
+  </p>
+  <p>
+    <input type="radio" name="seating" id="seating3" value="3">
+    <label for="seating3">Middle-Back</label>
+  </p>
+  <p>
+    <input type="radio" name="seating" id="seating4" value="4">
+    <label for="seating4">Far Back</label>
+  </p>
+</div>
+
+
+<h3>Choose Type of Experience</h3>
+<div class="choose">
+  <p>
+    <input type="radio" name="package" id="ticket" value="ticket">
+    <label for="ticket">Movie Tickets</label>
+  </p>
+  <p>
+    <input type="radio" name="package" id="complete" value="complete">
+    <label for="complete">Complete Cinema Package</label>
+  </p>
+</div>
+
+<fieldset id="movie_only">
+<legend>Enter Quantities</legend>
+  <p class="heading">
+    <span class="first">Product</span>
+    <span class="second">Price</span>
+    <span class="third">Quantity</span>
+    <span class="fourth">Cost</span>
+  </p>
+  <p>
+    <label for="movie_adult_qty">Adult Movie Ticket</label>
+    <span>$9.99</span>
+    <input type="hidden" id="movie_adult_price" 
+      name="movie_adult_price" value="9.99">
+    <input type="text" id="movie_adult_qty" class="quantity" 
+      name="movie_adult_qty" value="0">
+    <input type="text" id="movie_adult_total" class="cost" 
+      name="movie_adult_total" value="0.00" readonly>
+  </p>
+  <p>
+    <label for="movie_child_qty">Child Movie Ticket</label>
+    <span>$5.99</span>
+    <input type="hidden" id="movie_child_price" 
+      name="movie_child_price" value="5.99">
+    <input type="text" id="movie_child_qty" class="quantity" 
+      name="movie_child_qty" value="0">
+    <input type="text" id="movie_child_total" class="cost" 
+      name="movie_child_total" value="0.00" readonly>
+  </p>
+</fieldset>
+
+<fieldset id="movie_plus">
+<legend>Enter Quantities</legend>
+  <p class="heading">
+    <span class="first">Product</span>
+    <span class="second">Price</span>
+    <span class="third">Quantity</span>
+    <span class="fourth">Cost</span>
+  </p>
+  <p>
+    <label for="adult_qty">Adult Movie Ticket</label>
+    <span>$8.99</span>
+    <input type="hidden" id="adult_price" 
+      name="adult_price" value="8.99">
+    <input type="text" id="adult_qty" class="quantity" 
+      name="adult_qty" value="0">
+    <input type="text" id="adult_total" class="cost" 
+      name="adult_total" value="0.00" readonly>
+  </p>
+  <p>
+    <label for="child_qty">Child Movie Ticket</label>
+    <span>$4.99</span>
+    <input type="hidden" id="child_price" 
+      name="child_price" value="4.99">
+    <input type="text" id="child_qty" class="quantity" 
+      name="child_qty" value="0">
+    <input type="text" id="child_total" class="cost" 
+       name="child_total" value="0.00" readonly>
+  </p>
+  <p>
+    <label for="individual_qty">Individual Popcorn</label>
+    <span>$2.99</span>
+    <input type="hidden" id="individual_price" 
+      name="individual_price" value="2.99">
+    <input type="text" id="individual_qty" class="quantity" 
+      name="individual_qty" value="0">
+    <input type="text" id="individual_total" class="cost" 
+      name="individual_total" value="0.00" readonly>
+  </p>
+  <p>
+    <label for="share_qty">Popcorn to Share</label>
+    <span>$7.99</span>
+    <input type="hidden" id="share_price" 
+      name="share_price" value="7.99">
+    <input type="text" id="share_qty" class="quantity" 
+      name="share_qty" value="0">
+    <input type="text" id="share_total" class="cost" 
+      name="share_total" value="0.00" readonly>
+  </p>
+  <p>
+    <label for="drink_qty">Large Drink</label>
+    <span>$4.99</span>
+    <input type="hidden" id="drink_price" 
+      name="drink_price" value="4.99">
+    <input type="text" id="drink_qty" class="quantity" 
+      name="drink_qty" value="0">
+    <input type="text" id="drink_total" class="cost" 
+      name="drink_total" value="0.00" readonly>
+  </p>
+</fieldset>
+
+<h3>See the Total</h3>
+<fieldset>
+<legend>Totals</legend>
+  <p class="total">
+    <label for="sales_tax">Sales Tax</label>
+    <input type="text" id="sales_tax" class="cost" 
+      name="sales_tax" value="0.00" readonly>
+  </p>
+  <p class="total">
+    <label for="total">Total</label>
+    <input type="text" id="total" class="cost" 
+      name="total" value="0.00" readonly>
+  </p>
+
+  <p><input type="submit" name="submit" value="Place Order"></p>
+</fieldset>
+</form>
+</main>
+
+<footer>
+  <h3>Your Place to Find the Latest and Greatest Movies</h3>
+</footer>
+</body>
+</html>
+
