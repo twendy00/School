@@ -9,9 +9,9 @@ After successful completion of this course, students will be able to:
 * Create interactive web pages using client-side JavaScript programming.
 * Use the jQuery framework to add functionality to a website.
 
-**Final Assignment**: http://icarus.cs.weber.edu/~wt65542/cs2350/hw12/
-**Alligator Slideshow**: http://icarus.cs.weber.edu/~wt65542/cs2350/pa9/slideShow.html
-**National Pet Competition**: http://icarus.cs.weber.edu/~wt65542/cs2350/pa11/pet_competition.html
+**Final Assignment**: http://icarus.cs.weber.edu/~wt65542/cs2350/hw12/<br>
+**Alligator Slideshow**: http://icarus.cs.weber.edu/~wt65542/cs2350/pa9/slideShow.html<br>
+**National Pet Competition**: http://icarus.cs.weber.edu/~wt65542/cs2350/pa11/pet_competition.html<br>
 **Exploring Science**:
 **Sue's Diner Animation**:
 **Learning Strategies**:
