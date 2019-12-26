@@ -1,3 +1,5 @@
+# Object-Oriented Programming, Summer 2019, Weber State University
+
 # Course Description
 An introduction to the C++ language. Topics will include data types, control structures, functions, pointers, arrays, I/O streams, classes, objects, encapsulation, overloading, inheritance and the use of these concepts in problem-solving.
 
