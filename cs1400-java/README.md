@@ -6,52 +6,48 @@ The purpose of this course is to teach the crucial skills of problem solving. Th
 
 May 6
 
-Introduction to Problem Solving
-Ch. 1: Introduction to Computers and Programming
-Ch. 2: Algorithms and Design
-Ch. 3: Java Basics
-Mission #1 Assignment
-Mission #2 Assignment
+Introduction to Problem Solving<br>
+Ch. 1: Introduction to Computers and Programming<br>
+Ch. 2: Algorithms and Design<br>
+Ch. 3: Java Basics<br>
+Mission #1 Assignment<br>
+Mission #2 Assignment<br>
 
 May 13
 
-Ch. 4: Control Statements
-Ch. 5: Using Pre-Built Methods
-Mission #3 Assignment
-Mission #4 Assignment
+Ch. 4: Control Statements<br>
+Ch. 5: Using Pre-Built Methods<br>
+Mission #3 Assignment<br>
+Mission #4 Assignment<br>
 
 May 20
 
-Review
-Midterm Exam (due by May 27th)
-Mission #5 Assignment
-Midterm Exam
+Mission #5 Assignment<br>
+Midterm Exam<br>
 
 May 27
 
-Ch. 9: Arrays
-Ch. 10: ArrayLists
-Ch. 15: Exception Handling
-Mission #7 Assignment
-Mission #8 Assignment
+Ch. 9: Arrays<br>
+Ch. 10: ArrayLists<br>
+Ch. 15: Exception Handling<br>
+Mission #7 Assignment<br>
+Mission #8 Assignment<br>
 
 Jun 3
 
-Ch. 16: Files, Buffers, Channels, and Paths
-Ch. 6: Object-Oriented Programming
-Mission #9 Assignment
-Mission #10 Assignment
+Ch. 16: Files, Buffers, Channels, and Paths<br>
+Ch. 6: Object-Oriented Programming<br>
+Mission #9 Assignment<br>
+Mission #10 Assignment<br>
 
 Jun 10
 
-Ch. 7: Object-Oriented Programming – Add’l Details Robocode
-Mission #11 Assignment
-Mission #12 Assignment
+Ch. 7: Object-Oriented Programming – Add’l Details Robocode<br>
+Mission #11 Assignment<br>
+Mission #12 Assignment<br>
 
 Jun 17
 
-Final Mission
-Ch. 17: GUI Programming Basics Review
-Final Exam (due by Jun 25th)
-Mission #13 Assignment
+Ch. 17: GUI Programming Basics Review<br>
+Mission #13 Assignment<br>
 Final Exam
