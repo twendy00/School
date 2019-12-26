@@ -10,11 +10,12 @@ After successful completion of this course, students will be able to:
 * Use the jQuery framework to add functionality to a website.
 
 **Final Assignment**: http://icarus.cs.weber.edu/~wt65542/cs2350/hw12/<br>
-**Alligator Slideshow**: http://icarus.cs.weber.edu/~wt65542/cs2350/pa9/slideShow.html<br>
+**The Movies**: http://icarus.cs.weber.edu/~wt65542/cs2350/pa12/movies.html<br>
+**Learning JavaScript**: http://icarus.cs.weber.edu/~wt65542/cs2350/la8/jsfunctions.html<br>
 **National Pet Competition**: http://icarus.cs.weber.edu/~wt65542/cs2350/pa11/pet_competition.html<br>
-**Exploring Science**:
-**Sue's Diner Animation**:
-**Learning Strategies**:
-**Using JavaScript**:
-**Learning JavaScript**:
-**Managing Procrastination**:
+**Ice Cream Parlor**: http://icarus.cs.weber.edu/~wt65542/cs2350/pa7/jsEventsExample.html
+**Exploring Science**: http://icarus.cs.weber.edu/~wt65542/cs2350/pa6/<br>
+**Alligator Slideshow**: http://icarus.cs.weber.edu/~wt65542/cs2350/pa9/slideShow.html<br>
+**Sue's Diner Animation**: http://icarus.cs.weber.edu/~wt65542/cs2350/la12/grandopen.html<br>
+**Learning Strategies**: http://icarus.cs.weber.edu/~wt65542/cs2350/la6/<br>
+
