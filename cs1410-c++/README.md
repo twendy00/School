@@ -14,10 +14,10 @@ advantage of polymorphism;
 * Efficiently use C++’s I/O streams to read from and write to files.
 
 # Textbook 
-Object-Oriented Programming in C++
-Edition: 4th
-By: Robert Lafore
-ISBN: 978-0672323089
+Object-Oriented Programming in C++<br>
+Edition: 4th<br>
+By: Robert Lafore<br>
+ISBN: 978-0672323089<br>
 
 # Course Outline
 **Jun 24:** Basics, Loops, and Decisions<br>
