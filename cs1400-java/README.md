@@ -1,3 +1,5 @@
+# Fundamentals of Programming, Summer 2019, Weber State University
+
 # Goal 
 The purpose of this course is to teach the crucial skills of problem solving. The tool used to solve problems in this course is the Java programming language. In order to use Java effectively, students will learn the fundamentals of programming using the syntax of Java. Students will then in turn use those skills to write programs to solve problems.
 
