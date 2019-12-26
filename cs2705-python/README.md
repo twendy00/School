@@ -1,4 +1,4 @@
-# Network Fundamentals and Design, Spring 2019, Weber State University
+# Network Fundamentals and Design, Summer 2019, Weber State University
 
 # Learning Objectives
 Provide an understanding of the basic networking terminology.  This will cover the theory of networking, types of network protocols, and wide and local area networks.  The student should have a good understanding of network terminology at the completion of the course.
